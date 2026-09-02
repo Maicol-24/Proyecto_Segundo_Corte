@@ -30,6 +30,15 @@ public class Gato extends Animal {
         this.usaArenero = true;
     }
 
+    public String getColorPelaje() { return colorPelaje; }
+    public void setColorPelaje(String colorPelaje) { this.colorPelaje = colorPelaje; }
+    public int getVidasRestantes() { return vidasRestantes; }
+    public void setVidasRestantes(int vidasRestantes) { this.vidasRestantes = vidasRestantes; }
+    public double getLongitudBigotes() { return longitudBigotes; }
+    public void setLongitudBigotes(double longitudBigotes) { this.longitudBigotes = longitudBigotes; }
+    public boolean isUsaArenero() { return usaArenero; }
+    public void setUsaArenero(boolean usaArenero) { this.usaArenero = usaArenero; }
+
     @Override
     public String toString() {
         return "Gato [" + super.toString() + ", Color de pelaje: " + colorPelaje
