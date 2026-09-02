@@ -13,7 +13,7 @@ public class Zoologico {
         Perro perro2 = new Perro("Nala", 2, "Beagle", 'M');
 
         // Se usa el constructor de Perro con peso porque es el dato disponible en la adopcion.
-        Perro perro3 = new Perro("Toby", 11.5, "Criollo", false);
+        Perro perro3 = new Perro("Molly", 11.5, "Criolla", true);
 
         // Se usa el constructor completo de Gato para conservar el registro detallado.
         Gato gato1 = new Gato("Michi", 5, 4.2, true, "Atigrado", 7, 9.5, true);
