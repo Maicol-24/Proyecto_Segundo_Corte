@@ -24,6 +24,13 @@ public class Zoologico {
         // Se usa el constructor de Ave con peso y envergadura medidos en el rescate.
         Ave ave1 = new Ave("Aguila", 4.8, "Planeador", 210);
 
+        // Se usa el constructor de Ave con nombre, edad, tipo de vuelo y migracion (migratoria conocida).
+        Ave ave2 = new Ave("Golondrina", 2, "Aleteo", true);
+
+        // Se usa el constructor completo de Ave para registrar todos los datos de un condor.
+        Ave ave3 = new Ave("Condor", 15, 10.5, true, "Planeador", 270, 55.0, false);
+
+        System.out.println("=== ANIMALES DEL ZOOLOGICO ===\n");
         System.out.println(animal1);
         System.out.println(animal2);
         System.out.println(perro1);
@@ -32,5 +39,30 @@ public class Zoologico {
         System.out.println(gato1);
         System.out.println(gato2);
         System.out.println(ave1);
+        System.out.println(ave2);
+        System.out.println(ave3);
+
+        // Ejemplos de uso de getters y setters
+        System.out.println("\n=== EJEMPLOS DE MODIFICACION CON GETTERS Y SETTERS ===\n");
+        
+        // Modificar peso del perro Max usando setter
+        perro1.setPeso(20.5);
+        System.out.println("Peso actualizado de Max: " + perro1.getPeso() + " kg");
+        
+        // Cambiar nivel de energia de Nala
+        perro2.setNivelEnergia(9);
+        System.out.println("Nuevo nivel de energia de Nala: " + perro2.getNivelEnergia());
+        
+        // Modificar vidas restantes de Michi
+        gato1.setVidasRestantes(6);
+        System.out.println("Vidas restantes de Michi: " + gato1.getVidasRestantes());
+        
+        // Cambiar velocidad de vuelo del Aguila
+        ave1.setVelocidadVuelo(70.0);
+        System.out.println("Nueva velocidad de vuelo del Aguila: " + ave1.getVelocidadVuelo() + " km/h");
+        
+        // Cambiar estado de entrenamiento de Molly
+        perro3.setEntrenado(true);
+        System.out.println("Molly ahora esta entrenada: " + perro3.isEntrenado());
     }
 }
