@@ -30,6 +30,15 @@ public class Ave extends Animal {
         this.migratoria = false;
     }
 
+    public String getTipoVuelo() { return tipoVuelo; }
+    public void setTipoVuelo(String tipoVuelo) { this.tipoVuelo = tipoVuelo; }
+    public int getEnvergaduraCm() { return envergaduraCm; }
+    public void setEnvergaduraCm(int envergaduraCm) { this.envergaduraCm = envergaduraCm; }
+    public double getVelocidadVuelo() { return velocidadVuelo; }
+    public void setVelocidadVuelo(double velocidadVuelo) { this.velocidadVuelo = velocidadVuelo; }
+    public boolean isMigratoria() { return migratoria; }
+    public void setMigratoria(boolean migratoria) { this.migratoria = migratoria; }
+
     @Override
     public String toString() {
         return "Ave [" + super.toString() + ", Tipo de vuelo: " + tipoVuelo
