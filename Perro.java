@@ -29,6 +29,15 @@ public class Perro extends Animal {
         this.tamanio = 'M';
     }
 
+    public String getRaza() { return raza; }
+    public void setRaza(String raza) { this.raza = raza; }
+    public int getNivelEnergia() { return nivelEnergia; }
+    public void setNivelEnergia(int nivelEnergia) { this.nivelEnergia = nivelEnergia; }
+    public boolean isEntrenado() { return entrenado; }
+    public void setEntrenado(boolean entrenado) { this.entrenado = entrenado; }
+    public char getTamanio() { return tamanio; }
+    public void setTamanio(char tamanio) { this.tamanio = tamanio; }
+
     @Override
     public String toString() {
         return "Perro [" + super.toString() + ", Raza: " + raza
